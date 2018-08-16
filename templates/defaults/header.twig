@@ -1,0 +1,5 @@
+<header class="banner">
+    {% if is_front_page() == true %}<h1>{% endif %}
+    <a class="brand" href="{{ esc_url( home_url('/') )  }}">{{ get_bloginfo('name') }}</a>
+    {% if is_front_page() ==  true %}</h1>{% endif %}
+</header>

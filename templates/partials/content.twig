@@ -1,0 +1,9 @@
+{%  set object = objects|first %}
+<article {{ post_class( object.get_ID() ) }}>
+	<header>
+		<h1 class="entry-title">{{ object.get_title() | raw }}</h1>
+	</header>
+	<div class="entry-content">
+		{{ object.get_content() | raw }}
+	</div>
+</article>

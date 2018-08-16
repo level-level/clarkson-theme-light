@@ -1,0 +1,7 @@
+{% extends "layouts/2-column.twig" %}
+
+{% block content %}
+    {% for object in objects %}
+        {% include 'partials/teaser.twig' %}
+    {% endfor %}
+{% endblock %}
